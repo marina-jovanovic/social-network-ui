@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Korisnici grupe</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Korisnici grupe</h1>
+
+  <label for="groupId">Izaberite grupu:</label>
+  <select id="groupId">
+    <option value="11">Administratori</option>
+    <option value="12">Korisnici</option>
+  </select>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Datum rođenja</th>
+      </tr>
+    </thead>
+    <tbody id="groupUserList">
+      <!-- Ovde ide lista korisnika -->
+    </tbody>
+  </table>
+
+  <script src="js/users.js"></script>
+</body>
+</html>
