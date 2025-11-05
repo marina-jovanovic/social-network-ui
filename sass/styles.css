@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #2c3e50;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #2c3e50;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+nav a:hover {
+  background-color: #3498db;
+}
+
+hr {
+  margin: 20px auto;
+  width: 80%;
+}
+
+main, section {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+table th {
+  background-color: #2c3e50;
+  color: white;
+}
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+table tr:hover {
+  background-color: #eef;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form label {
+  font-weight: bold;
+}
+form input, form select, form button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+

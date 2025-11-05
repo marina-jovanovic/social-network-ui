@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dodaj / Izmijeni korisnika</title>
+  <link rel="stylesheet" href="sass/styles.css">
+</head>
+<body>
+  <h1>Dodaj ili izmijeni korisnika</h1>
+
+  <form id="userForm">
+    <input type="hidden" id="userId">
+
+    <label for="name">Ime:</label>
+    <input type="text" id="name" required>
+
+    <label for="surname">Prezime:</label>
+    <input type="text" id="surname" required>
+
+    <label for="dob">Datum rođenja:</label>
+    <input type="date" id="dob" required>
+
+    <button type="submit">Sačuvaj</button>
+  </form>
+
+  <hr>
+
+  <h2>Svi korisnici</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Ime</th>
+        <th>Prezime</th>
+        <th>Datum rođenja</th>
+        <th>Akcije</th>
+      </tr>
+    </thead>
+    <tbody id="userList"></tbody>
+  </table>
+
+  <script src="js/users.js"></script>
+</body>
+</html>

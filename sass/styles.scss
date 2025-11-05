@@ -1,0 +1,104 @@
+// Osnovne boje i fontovi
+$primary: #2c3e50;
+$accent: #3498db;
+$background: #f4f6f8;
+$text: #333;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $background;
+  color: $text;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: $primary;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: $primary;
+  padding: 10px;
+
+  a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: $accent;
+    }
+  }
+}
+
+hr {
+  margin: 20px auto;
+  width: 80%;
+}
+
+main, section {
+  max-width: 800px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: $primary;
+    color: white;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  tr:hover {
+    background-color: #eef;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  label {
+    font-weight: bold;
+  }
+
+  input, select, button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    background-color: $accent;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($accent, 10%);
+    }
+  }
+}
